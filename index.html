@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102c3a">
+  <title>SANAD | سند</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#" aria-label="SANAD home"><span class="brand-mark">س</span><span>SANAD</span></a>
+  <nav class="nav"><a href="#cases" data-i18n="navCases">الحالات</a><a href="#how" data-i18n="navHow">كيف تعمل</a><a href="#about" data-i18n="navAbout">عن سند</a></nav>
+  <div class="actions">
+    <select id="language" aria-label="Language">
+      <option value="ar">العربية</option><option value="en">English</option><option value="tr">Türkçe</option>
+    </select>
+    <button class="btn btn-small" id="requestTop" data-i18n="requestHelp">اطلب المساعدة</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="eyebrow">من إنسان إلى إنسان</span>
+      <h1 data-i18n="heroTitle">قد لا تستطيع تغيير العالم كله،<br>لكن يمكنك تغيير حياة إنسان.</h1>
+      <p data-i18n="heroText">سند يقرّب بين الأشخاص الذين يحتاجون إلى مساعدة، والأشخاص القادرين على تقديمها، مع احترام الخصوصية والكرامة.</p>
+      <div class="hero-buttons">
+        <a class="btn" href="#cases" data-i18n="giveHelp">أريد تقديم المساعدة</a>
+        <button class="btn btn-outline" id="requestHero" data-i18n="needHelp">أحتاج إلى مساعدة</button>
+      </div>
+      <p class="micro" data-i18n="heroNote">لا تحتفظ سند بأموال المساعدات في هذا النموذج.</p>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      <div class="heart">♡</div>
+      <div class="float-card card-a"><span>♥</span><b data-i18n="care">رعاية وتكافل</b></div>
+      <div class="float-card card-b"><span>↗</span><b data-i18n="direct">مساعدة مباشرة</b></div>
+      <div class="float-card card-c"><span>◎</span><b data-i18n="privacy">خصوصية محفوظة</b></div>
+    </div>
+  </section>
+
+  <section class="trust-strip">
+    <div><strong data-i18n="privacyTitle">الخصوصية أولاً</strong><span data-i18n="privacySub">لا نعرض الهوية للعامة</span></div>
+    <div><strong data-i18n="directTitle">مساعدة مباشرة</strong><span data-i18n="directSub">التواصل بين الطرفين</span></div>
+    <div><strong data-i18n="reviewTitle">مراجعة بشرية</strong><span data-i18n="reviewSub">الطلبات تخضع للمراجعة</span></div>
+  </section>
+
+  <section class="section" id="cases">
+    <div class="section-heading">
+      <div><span class="eyebrow" data-i18n="discover">اكتشف فرص المساعدة</span><h2 data-i18n="casesTitle">حالات تحتاج إلى سند</h2><p data-i18n="casesSub">أمثلة توضيحية لشرح طريقة عرض الحالات.</p></div>
+      <span class="demo-pill" data-i18n="demo">بيانات تجريبية</span>
+    </div>
+    <div class="filters">
+      <input id="search" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="ابحث حسب نوع الحاجة أو الدولة">
+      <select id="categoryFilter" aria-label="Category">
+        <option value="all" data-i18n="allCategories">كل الفئات</option>
+        <option value="family" data-i18n="family">مساعدة أسرية</option>
+        <option value="education" data-i18n="education">تعليم</option>
+        <option value="medical" data-i18n="medical">احتياجات طبية</option>
+      </select>
+    </div>
+    <div class="case-grid" id="caseGrid"></div>
+  </section>
+
+  <section class="how-section" id="how">
+    <div class="section-heading"><div><span class="eyebrow" data-i18n="simple">بخطوات واضحة</span><h2 data-i18n="howTitle">كيف تعمل سند؟</h2></div></div>
+    <div class="steps">
+      <article><span>01</span><h3 data-i18n="step1Title">يُقدَّم الطلب</h3><p data-i18n="step1Text">يشرح الشخص احتياجه ويحدد المبلغ المطلوب.</p></article>
+      <article><span>02</span><h3 data-i18n="step2Title">مراجعة بشرية</h3><p data-i18n="step2Text">يراجع فريق سند المعلومات والأدلة بسرية.</p></article>
+      <article><span>03</span><h3 data-i18n="step3Title">تواصل مباشر</h3><p data-i18n="step3Text">يختار المتبرع الحالة ويتواصل مع صاحبها بموافقته.</p></article>
+      <article><span>04</span><h3 data-i18n="step4Title">تأكيد المساعدة</h3><p data-i18n="step4Text">يؤكد المستفيد استلام المساعدة اختيارياً.</p></article>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div><span class="eyebrow" data-i18n="ourPromise">وعد سند</span><h2 data-i18n="aboutTitle">المساعدة بكرامة، والشفافية بمسؤولية.</h2></div>
+    <p data-i18n="aboutText">نؤمن أن المساعدة تبدأ بالثقة. لذلك صُممت سند لتقليل كشف البيانات الشخصية، وإتاحة التواصل المباشر، وتوضيح ما تم التحقق منه وما لم يتم التحقق منه.</p>
+  </section>
+</main>
+
+<footer><a class="brand footer-brand" href="#"><span class="brand-mark">س</span><span>SANAD</span></a><p data-i18n="footer">نموذج أولي تجريبي — لا ترسل بيانات شخصية أو مصرفية حقيقية.</p><span>© SANAD MVP</span></footer>
+
+<div class="modal-backdrop" id="modal" hidden>
+  <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+    <h2 id="modalTitle" data-i18n="formTitle">طلب مساعدة تجريبي</h2>
+    <p class="warning" data-i18n="formWarning">هذا نموذج عرض فقط. لا تُدخل معلومات حقيقية؛ لا يتم إرسال أو حفظ البيانات.</p>
+    <form id="requestForm">
+      <label><span data-i18n="countryLabel">الدولة</span><input required placeholder="Bulgaria"></label>
+      <label><span data-i18n="typeLabel">نوع المساعدة</span><select required><option data-i18n="family">مساعدة أسرية</option><option data-i18n="education">تعليم</option><option data-i18n="medical">احتياجات طبية</option></select></label>
+      <label><span data-i18n="amountLabel">المبلغ المطلوب (تقريبي)</span><input type="number" min="1" required placeholder="500"></label>
+      <label><span data-i18n="storyLabel">وصف مختصر للحاجة</span><textarea required rows="4" placeholder="..."></textarea></label>
+      <button class="btn" type="submit" data-i18n="previewBtn">معاينة الطلب</button>
+      <div id="formResult" class="form-result" role="status"></div>
+    </form>
+  </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
